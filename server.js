@@ -12,7 +12,7 @@ const model = genAI.getGenerativeModel({
   model: "gemini-2.0-flash-exp",
 });
   async function run(){
-const result = await model.generateContent("Hey");
+const result = await model.generateContent(prompt);
 var airesponse = result.response.text()
   console.log(airesponse)
   res.send(airesponse)
