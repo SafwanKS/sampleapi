@@ -3,9 +3,8 @@ const app = express()
 const PORT = 1234
 
 app.get('/api/getName', (req, res)=>{
-  const mapHeader = req.headers['name']
-  console.log(mapHeader)
-  res.send('');
+  const name = req.headers['name']
+  res.json({name: name})
 })
 
 
