@@ -1,5 +1,5 @@
 const express = require("express")
-const GoogleGenerativeAI = require("@google/generative-ai");
+const { GoogleGenerativeAI } = require("@google/generative-ai");
 const app = express()
 const PORT = 1234
 
