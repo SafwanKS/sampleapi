@@ -14,7 +14,6 @@ const model = genAI.getGenerativeModel({
   async function run(){
 const result = await model.generateContent(prompt);
 var airesponse = result.response.text()
-  console.log(airesponse)
   res.send(airesponse)
   }
   run()
